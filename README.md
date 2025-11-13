@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tradiciones Mexicanas - Día de Muertos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        nav {
+            background-color: #f5c6c6;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d32f2f;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #d32f2f;
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 5px;
+        }
+
+        .imagen {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .imagen img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* --- Formulario de Satisfacción --- */
+        #satisfaccion {
+            background-color: #fdecea;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #d32f2f;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #d32f2f;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tradiciones Mexicanas</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#lugares">Lugares Turísticos</a>
+        <a href="#catrina">La Catrina</a>
+        <a href="#satisfaccion">Opinión</a>
+    </nav>
+
+    <main id="inicio">
+        <h2>Día de Muertos</h2>
+        <p>El <strong>Día de Muertos</strong> es una de las tradiciones más importantes de México...</p>
+
+        <div class="imagen">
+            <img src="https://www.gob.mx/cms/uploads/article/main_image/26574/proyecto-mixquic-mixquic3.jpg" alt="Ofrenda Día de Muertos">
+        </div>
+
+        <!-- === FORMULARIO DE SATISFACCIÓN === -->
+        <section id="satisfaccion">
+            <h2>Formulario de Satisfacción</h2>
+            <p>Tu opinión es muy importante para nosotros. Por favor, llena este breve formulario:</p>
+
+            <!-- 🔹 CAMBIA AQUÍ TU CORREO -->
+            <form action="https://formsubmit.co/TU_CORREO_REAL@ejemplo.com" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="satisfaccion">Nivel de satisfacción:</label>
+                <select id="satisfaccion" name="satisfaccion" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                </select>
+
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                <!-- Configuración de FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tradiciones Mexicanas | Elaborado por [Tu Nombre]</p>
+        <a href="#inicio" style="color: white;">Volver al inicio</a>
+    </footer>
+</body>
+</html>
 # tradicionesMexico789
